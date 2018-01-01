@@ -13,7 +13,7 @@ import sys
 ##dictionary##
 arg1 = sys.argv[1]
 arg2 = sys.argv[2]
-data=open('ass1-train_data.txt','r')
+data=open('train_data.txt','r')
 whitelist = set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0 ')
 all_lines=data.readlines()
 stemmer = PorterStemmer()
@@ -36,7 +36,7 @@ for line in all_lines:
 # In[3]:
 
 ##feature vector (fv) creation##
-data2=open('ass1-train_data.txt','r')
+data2=open('train_data.txt','r')
 ##  test data -> matrix  ##
 all_lines=data2.readlines()
 bag=[]
